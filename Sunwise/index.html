@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SunWise Books</title>
+    <style>
+        body {
+            background-color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            animation: slideUp 1s ease-out;
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .header-text {
+            font-size: 160%;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .sub-header-text {
+            font-size: 100%;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-size: 120%;
+            font-weight: bold;
+            margin-top: 30px;
+        }
+
+        .book-description {
+            font-size: 110%;
+            margin-top: 20px;
+            text-align: left;
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+            transition: transform 0.3s, box-shadow 0.3s;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .book-description:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .button-container {
+            margin-top: 30px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: orange;
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        button:hover {
+            background-color: darkorange;
+            transform: scale(1.05);
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+
+        a {
+            font-size: 18px;
+            margin: 10px;
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            color: orange;
+        }
+
+        .social-links {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Page Intro -->
+        <p class="header-text">Exploring SunWise Books?</p>
+        <p class="sub-header-text">Let us introduce ourselves!</p>
+
+        <p class="section-title">What is SunWise Books?</p>
+        <p>The authors of the self-help books we offer write with the intention to motivate and give support to struggling individuals with specific areas of themselves they seek growth in.</p>
+        
+        <p>The brand name <span style="color: orange; font-weight: bold">SunWise</span> <span style="font-weight: bold">Books</span> could be interpreted as the books sharing light full of wisdom to the readers — like a sun contributing to a plant's photosynthesis to help them grow.</p>
+
+        <p class="section-title">What we offer!</p>
+        <p>As a part of our mission, we aim to provide support to as many people as we can in the form of our affordable self-help books.</p>
+        
+        <p>Currently, we offer four books that tackle topics such as:
+            <span style="font-weight: bold;">Emotions, Time Management, Habits, and Studying.</span> 
+            Below are the descriptions of these books.
+        </p>
+
+        <!-- Books Collection Section -->
+        <section class="book-section">
+            <h2 class="section-title">The Books Of: Collection</h2>
+            
+            <div class="book-description">
+                <h3><b>1. Emotions</b></h3>
+                <p>This book helps you understand and manage your emotions more effectively. It dives into how emotions work, why they happen, and how you can use them to your advantage to improve mental well-being and handle difficult situations better.</p>
+            </div>
+
+            <div class="book-description">
+                <h3><b>2. Time Management</b></h3>
+                <p>This book focuses on mastering the art of time management. It offers strategies for organizing your day, prioritizing tasks, and creating healthy routines. Learn how to balance your time more wisely and reduce stress.</p>
+            </div>
+
+            <div class="book-description">
+                <h3><b>3. Habits</b></h3>
+                <p>This book provides insights into building lasting, healthy habits. Learn how small changes can lead to significant personal growth. It teaches you how to break bad habits and replace them with positive ones for better productivity and well-being.</p>
+            </div>
+
+            <div class="book-description">
+                <h3><b>4. Studying</b></h3>
+                <p>This book helps students improve their study skills and discover smarter techniques for learning. From organizing study schedules to understanding how to retain information, it’s a guide to making studying more effective and enjoyable.</p>
+            </div>
+
+            <!-- Explore Button -->
+            <div class="button-container">
+                <a href="https://www.canva.com/design/DAGYl4qSgYc/KgF-OyI3msy0CAS5saBFNA/view?utm_content=DAGYl4qSgYc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hd6d336b380" target="_blank">
+                    <button>
+                        Explore Our Books on Canva
+                    </button>
+                </a>
+            </div>
+        </section>
+
+        <!-- Social Media Links Section -->
+        <p style="font-size: 90%">To see more of us...</p>
+        <p class="section-title">Visit our social media links!</p>
+
+        <div class="social-links">
+            <a href="https://www.instagram.com/sunwisebooks?igsh=Z3ZqbnQxeHJoZmZj" target="_blank">Instagram</a> |
+            <a href="https://www.youtube.com/@SunWiseBooks-g5y" target="_blank">YouTube</a>
+        </div>
+    </div>
+
+</body>
+</html>

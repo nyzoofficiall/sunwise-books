@@ -1,0 +1,26 @@
+/* ... keep everything before this the same ... */
+
+a {
+    font-size: 18px;
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s, transform 0.3s;
+}
+
+a:hover {
+    color: orange;
+    transform: scale(1.1);
+}
+
+.social-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* When you click it */
+a:active {
+    transform: scale(0.95);
+}
